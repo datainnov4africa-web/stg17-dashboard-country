@@ -26,7 +26,7 @@
    "fr": "Réalisé lors de l'atelier technique STG17, labo 02."
   },
   "defaultLang": "fr",
-  "synthetic": true,
+  "synthetic": false,
   "generated": "2026-09-18"
  },
  "areas": [
@@ -84,34 +84,16 @@
     "fr": "vs None"
    },
    "good": "down",
-   "highlight": false
+   "highlight": true
   },
   {
    "labels": {
-    "en": "National internet coverage 2025",
-    "fr": "Couverture Internet nationale 2025"
-   },
-   "value": 61.4,
-   "unit": {
-    "en": "%",
-    "fr": "%"
-   },
-   "delta": null,
-   "deltaLabel": {
-    "en": "vs None",
-    "fr": "vs None"
-   },
-   "good": "down",
-   "highlight": false
-  },
-  {
-   "labels": {
-    "en": "Total resident population 2025 (thousands)",
-    "fr": "Population résidente totale 2025 (milliers)"
+    "en": "Total resident population",
+    "fr": "Population résidente totale"
    },
    "value": 18742,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "delta": null,
@@ -119,18 +101,36 @@
     "en": "vs None",
     "fr": "vs None"
    },
-   "good": "down",
-   "highlight": false
+   "good": "up",
+   "highlight": true
   },
   {
    "labels": {
-    "en": "Population density Littoral Sud 2025",
-    "fr": "Densité de population Littoral Sud 2025"
+    "en": "Change in household internet access (2023‑2025)",
+    "fr": "Évolution de la connexion Internet des ménages (2023‑2025)"
    },
-   "value": 188,
+   "value": 13.2,
    "unit": {
-    "en": "hab/km²",
-    "fr": "hab/km2"
+    "en": "points",
+    "fr": "points"
+   },
+   "delta": null,
+   "deltaLabel": {
+    "en": "vs None",
+    "fr": "vs None"
+   },
+   "good": "up",
+   "highlight": true
+  },
+  {
+   "labels": {
+    "en": "Unemployment rate in Vallée de l'Est (2023)",
+    "fr": "Taux de chômage dans la Vallée de l'Est (2023)"
+   },
+   "value": 14.7,
+   "unit": {
+    "en": "%",
+    "fr": "%"
    },
    "delta": null,
    "deltaLabel": {
@@ -208,7 +208,7 @@
   },
   "population_residente": {
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "periods": [
@@ -254,7 +254,7 @@
     ]
    }
   },
-  "menages_internet": {
+  "menages_connexion_internet": {
    "unit": {
     "en": "%",
     "fr": "%"
@@ -316,40 +316,16 @@
     "fr": "Taux de chômage par région (2021‑2025)"
    },
    "sub": {
-    "en": "Annual unemployment percentages by region.",
-    "fr": "Pourcentages annuels du chômage par région."
+    "en": "Series show the percentage of unemployed persons in each region over the period.",
+    "fr": "Les séries montrent le pourcentage de personnes au chômage dans chaque région sur la période."
    },
    "lede": {
-    "en": "National unemployment shows a downward trend over the period.",
-    "fr": "Le chômage national montre une tendance à la baisse sur la période."
+    "en": "All regions show a gradual trend over the five years.",
+    "fr": "Toutes les régions affichent une tendance progressive sur les cinq années."
    },
    "src": {
-    "en": "National Statistical Institute",
-    "fr": "Institut national de la statistique"
-   }
-  },
-  {
-   "id": "menages_internet",
-   "chart": "grouped",
-   "tab": {
-    "en": "Internet households",
-    "fr": "Ménages Internet"
-   },
-   "title": {
-    "en": "Household internet connection by region (2023 vs 2025)",
-    "fr": "Connexion Internet des ménages par région (2023 vs 2025)"
-   },
-   "sub": {
-    "en": "Percentage of households with a home internet connection.",
-    "fr": "Pourcentage de ménages disposant d’une connexion Internet à domicile."
-   },
-   "lede": {
-    "en": "Most regions increased their internet coverage between 2023 and 2025.",
-    "fr": "La plupart des régions ont augmenté leur couverture Internet entre 2023 et 2025."
-   },
-   "src": {
-    "en": "National Statistical Institute",
-    "fr": "Institut national de la statistique"
+    "en": "National labour statistics office",
+    "fr": "Office national de la statistique du travail"
    }
   },
   {
@@ -360,20 +336,44 @@
     "fr": "Population résidente"
    },
    "title": {
-    "en": "Resident population and density by region (2025)",
-    "fr": "Population résidente et densité par région (2025)"
+    "en": "Resident population characteristics by region",
+    "fr": "Caractéristiques de la population résidente par région"
    },
    "sub": {
-    "en": "Population figures (thousands) and density (hab/km²) for 2025.",
-    "fr": "Effectifs (en milliers) et densité (hab/km²) pour 2025."
+    "en": "Bars compare density, share and total population across regions.",
+    "fr": "Les barres comparent la densité, la part et la population totale selon les régions."
    },
    "lede": {
-    "en": "The Littoral Sud region has the highest density, while the Plateau Central holds the largest share of the population.",
-    "fr": "La région Littoral Sud présente la densité la plus élevée, tandis que le Plateau Central détient la plus grande part de la population."
+    "en": "The Littoral Sud has the highest density, while the Plateau Central holds the largest share of the total population.",
+    "fr": "Le Littoral Sud présente la densité la plus élevée, tandis que le Plateau Central détient la plus grande part de la population totale."
    },
    "src": {
-    "en": "National Statistical Institute",
-    "fr": "Institut national de la statistique"
+    "en": "National census bureau",
+    "fr": "Bureau national du recensement"
+   }
+  },
+  {
+   "id": "menages_connexion_internet",
+   "chart": "bar",
+   "tab": {
+    "en": "Internet access",
+    "fr": "Accès Internet"
+   },
+   "title": {
+    "en": "Change in household internet connection (2023‑2025)",
+    "fr": "Évolution de la connexion Internet des ménages (2023‑2025)"
+   },
+   "sub": {
+    "en": "Bars represent the variation in percentage points between 2023 and 2025 for each area.",
+    "fr": "Les barres représentent la variation en points de pourcentage entre 2023 et 2025 pour chaque zone."
+   },
+   "lede": {
+    "en": "All regions experienced an increase, with the Ensemble du pays showing the largest gain.",
+    "fr": "Toutes les régions ont connu une hausse, l'Ensemble du pays affichant le gain le plus important."
+   },
+   "src": {
+    "en": "National digital inclusion survey",
+    "fr": "Enquête nationale sur l’inclusion numérique"
    }
   }
  ],
@@ -874,7 +874,7 @@
    "period": "Population",
    "value": 4912,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "page": 2,
@@ -902,7 +902,7 @@
    "period": "Densité (hab/km2)",
    "value": 312,
    "unit": {
-    "en": "hab/km²",
+    "en": "inhabitants/km²",
     "fr": "hab/km2"
    },
    "page": 2,
@@ -916,7 +916,7 @@
    "period": "Population",
    "value": 3704,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "page": 2,
@@ -944,7 +944,7 @@
    "period": "Densité (hab/km2)",
    "value": 188,
    "unit": {
-    "en": "hab/km²",
+    "en": "inhabitants/km²",
     "fr": "hab/km2"
    },
    "page": 2,
@@ -958,7 +958,7 @@
    "period": "Population",
    "value": 2158,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "page": 2,
@@ -986,7 +986,7 @@
    "period": "Densité (hab/km2)",
    "value": 41,
    "unit": {
-    "en": "hab/km²",
+    "en": "inhabitants/km²",
     "fr": "hab/km2"
    },
    "page": 2,
@@ -1000,7 +1000,7 @@
    "period": "Population",
    "value": 3261,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "page": 2,
@@ -1028,7 +1028,7 @@
    "period": "Densité (hab/km2)",
    "value": 97,
    "unit": {
-    "en": "hab/km²",
+    "en": "inhabitants/km²",
     "fr": "hab/km2"
    },
    "page": 2,
@@ -1042,7 +1042,7 @@
    "period": "Population",
    "value": 2489,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "page": 2,
@@ -1070,7 +1070,7 @@
    "period": "Population",
    "value": 2218,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "page": 2,
@@ -1098,7 +1098,7 @@
    "period": "Densité (hab/km2)",
    "value": 23,
    "unit": {
-    "en": "hab/km²",
+    "en": "inhabitants/km²",
     "fr": "hab/km2"
    },
    "page": 2,
@@ -1112,7 +1112,7 @@
    "period": "Population",
    "value": 18742,
    "unit": {
-    "en": "thousands",
+    "en": "Thousands",
     "fr": "thousands"
    },
    "page": 2,
@@ -1140,7 +1140,7 @@
    "period": "Densité (hab/km2)",
    "value": 114,
    "unit": {
-    "en": "hab/km²",
+    "en": "inhabitants/km²",
     "fr": "hab/km2"
    },
    "page": 2,
@@ -1149,7 +1149,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "littoral-nord",
    "period": "2023",
    "value": 64.1,
@@ -1163,7 +1163,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "littoral-nord",
    "period": "2025",
    "value": 78.3,
@@ -1177,7 +1177,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "littoral-nord",
    "period": "Variation (points)",
    "value": 14.2,
@@ -1191,7 +1191,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "littoral-sud",
    "period": "2023",
    "value": 55.7,
@@ -1205,7 +1205,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "littoral-sud",
    "period": "2025",
    "value": 69.4,
@@ -1219,7 +1219,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "littoral-sud",
    "period": "Variation (points)",
    "value": 13.7,
@@ -1233,7 +1233,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "plateau-central",
    "period": "2023",
    "value": 33.2,
@@ -1247,7 +1247,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "plateau-central",
    "period": "2025",
    "value": 46.8,
@@ -1261,7 +1261,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "plateau-central",
    "period": "Variation (points)",
    "value": 13.6,
@@ -1275,7 +1275,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "vallee-de-l-est",
    "period": "2023",
    "value": 47.9,
@@ -1289,7 +1289,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "vallee-de-l-est",
    "period": "2025",
    "value": 60.2,
@@ -1303,7 +1303,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "vallee-de-l-est",
    "period": "Variation (points)",
    "value": 12.3,
@@ -1317,7 +1317,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "hauts-plateaux",
    "period": "2023",
    "value": 38.4,
@@ -1331,7 +1331,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "hauts-plateaux",
    "period": "2025",
    "value": 51.1,
@@ -1345,7 +1345,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "hauts-plateaux",
    "period": "Variation (points)",
    "value": 12.7,
@@ -1359,7 +1359,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "extreme-ouest",
    "period": "2023",
    "value": 35.6,
@@ -1373,7 +1373,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "extreme-ouest",
    "period": "2025",
    "value": 47.9,
@@ -1387,7 +1387,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "extreme-ouest",
    "period": "Variation (points)",
    "value": 12.3,
@@ -1401,7 +1401,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "nat",
    "period": "2023",
    "value": 48.2,
@@ -1415,7 +1415,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "nat",
    "period": "2025",
    "value": 61.4,
@@ -1429,7 +1429,7 @@
    "note": null
   },
   {
-   "indicator": "menages_internet",
+   "indicator": "menages_connexion_internet",
    "area": "nat",
    "period": "Variation (points)",
    "value": 13.2,
@@ -1449,12 +1449,12 @@
    "en": "Unemployment rate by region"
   },
   "population_residente": {
-   "fr": "Population résidente par région au 1er juillet 2025 (en milliers)",
-   "en": "Resident population by region, 1 July 2025 (thousands)"
+   "fr": "Population résidente",
+   "en": "resident population"
   },
-  "menages_internet": {
-   "fr": "Ménages disposant d'une connexion Internet à domicile (en %)",
-   "en": "Households with home Internet connection (%)"
+  "menages_connexion_internet": {
+   "fr": "Ménages disposant d'une connexion Internet à domicile",
+   "en": "Households with a home Internet connection"
   }
  },
  "i18n": {
@@ -1492,11 +1492,11 @@
    "fBuiltBody": "Python, an LLM extraction pipeline, Chart.js. No tracking, no cookies, no server — a single HTML file.",
    "stamp": "Dashboard generated on {date}. Figures are the responsibility of the source institution; the presentation is the responsibility of the team that built this page.",
    "syntheticWarn": "Demonstration data — fictional country, for training purposes only.",
-   "kicker": "",
-   "title": "Quarterly Statistical Bulletin",
-   "subtitle": "Key labour market, demographic and digital connectivity indicators by region.",
-   "ovTitle": "Key indicators",
-   "ovLede": "This bulletin presents unemployment rates, resident population and internet access for the main regions.",
+   "kicker": "Quarterly Statistical Bulletin",
+   "title": "Key labour market, demographic and digital inclusion indicators",
+   "subtitle": "Data for 2021‑2025",
+   "ovTitle": "Overview",
+   "ovLede": "This bulletin presents the evolution of unemployment, population and household internet access across regions.",
    "limBody": "",
    "publisher": "National Institute of Statistics",
    "period": ""
@@ -1535,11 +1535,11 @@
    "fBuiltBody": "Python, une chaîne d'extraction par LLM, Chart.js. Aucun traceur, aucun cookie, aucun serveur — un seul fichier HTML.",
    "stamp": "Tableau de bord généré le {date}. Les chiffres relèvent de la responsabilité de l'institution source ; la présentation relève de la responsabilité de l'équipe qui a construit cette page.",
    "syntheticWarn": "Données de démonstration — pays fictif, à usage pédagogique uniquement.",
-   "kicker": "",
-   "title": "Bulletin statistique trimestriel",
-   "subtitle": "Principaux indicateurs du marché du travail, démographiques et de la connectivité numérique par région.",
-   "ovTitle": "Indicateurs clés",
-   "ovLede": "Ce bulletin présente les taux de chômage, la population résidente et l’accès à Internet pour les principales régions.",
+   "kicker": "Bulletin statistique trimestriel",
+   "title": "Principaux indicateurs du marché du travail, démographiques et d’inclusion numérique",
+   "subtitle": "Données 2021‑2025",
+   "ovTitle": "Vue d’ensemble",
+   "ovLede": "Ce bulletin présente l’évolution du chômage, de la population et de l’accès à Internet à domicile selon les régions.",
    "limBody": "",
    "publisher": "Institut National de la Statistique",
    "period": ""
@@ -1547,10 +1547,10 @@
  },
  "overviewScatter": {
   "x": "taux_de_chomage_par_region",
-  "y": "menages_internet",
+  "y": "menages_connexion_internet",
   "title": {
-   "en": "Households with home Internet connection (%) against Unemployment rate by region",
-   "fr": "Ménages disposant d'une connexion Internet à domicile (en %) et Taux de chômage par région"
+   "en": "Households with a home Internet connection against Unemployment rate by region",
+   "fr": "Ménages disposant d'une connexion Internet à domicile et Taux de chômage par région"
   },
   "sub": {
    "en": "One point per area — an association, not a causal claim",
