@@ -1,3 +1,9 @@
+**Live dashboard: <https://datainnov4africa-web.github.io/stg17-dashboard-country/>**
+
+Rebuilt by running the notebook in this repository against the source publication. Last published 2026-09-18.
+
+---
+
 # Key labour market, demographic and digital inclusion indicators
 
 Bilingual (EN/FR) dashboard built from **Bulletin statistique trimestriel**, pages 1, 2.
