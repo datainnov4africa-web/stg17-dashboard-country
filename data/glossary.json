@@ -22,9 +22,9 @@
  "extrême ouest": "far west",
  "total": "Total",
  "taux_de_chomage_par_region": "Unemployment rate by region",
- "population_residente": "Resident population by region, 1 July 2025 (thousands)",
- "menages_internet": "Households with home Internet connection (%)",
+ "population_residente": "resident population",
+ "menages_connexion_internet": "Households with a home Internet connection",
  "%": "%",
- "hab/km2": "hab/km²",
- "thousands": "thousands"
+ "hab/km2": "inhabitants/km²",
+ "thousands": "Thousands"
 }
